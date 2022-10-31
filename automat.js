@@ -7,6 +7,6 @@ async function uploadCvs() {
   const page = await browser.newPage();
   await page.goto('https://https://todoist.com/app/project/2301311976');
   const element = await page.$('input[type=file]');
-  await element.uploadFile('./ToDoList.csv');
+  await element.uploadFile('./toDoList.csv');
 }
 uploadCvs();
